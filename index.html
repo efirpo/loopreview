@@ -6,20 +6,34 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.4.1.js"></script>
-  <script src="js/scripts.js"></script>"
+  <script src="js/scripts.js"></script>
   <title>Robotic Nonsense Generator</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container centered">
+    <img src="img/mrrobojers.PNG" title="You should watch the show Mr. Robot">
+    <br><br>
+    <h2>And his Magic Robotic Nonsense Generator</h2><br><br>
+    <div class="row">
+      
+      <form id="numberForm" class="form-inline">
+        <div class="form-group">
+          <label for="userName">What is your name?</label> &nbsp;
+          <input id="userName" type="text"> &nbsp; &nbsp; &nbsp;
+          <label for="userNumber">Enter a number</label> &nbsp;
+          <input id="userNumber" type="number">
+        </div> &nbsp; &nbsp; &nbsp;
+        <button type="submit" id="submitButton" class="btn btn-outline-success">Compute</button>
+      </form>
+    
+    </div>
+    
+    <div class="row">
+      <div id="computed">
 
-    <form id="numberForm" class="form-inline">
-      <div class="form-group mb-2">
-        <label for="userInput">Enter a Number</label>
-        <input id="userInput" type="number" placeholder="bigger than 0, please!">
+
       </div>
-      <button type="submit" id="submitButton" class="btn btn-outline-success">Compute</button>
-    </form>
-
+    </div>
   </div>
 </body>
 </html>
