@@ -20,6 +20,22 @@ jQuery Script Library
 
 ## Specs
 
+### Behavior: Program will create an array of numbers from 0 to user-inputted-number.
+#### Sample Input: 23
+#### Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+
+### Behavior: Program will replace all numbers in range containing a 1, but not a 2 or 3, with "beep"
+#### Sample Input: 23
+#### Expected Output: [0, beep, 2, 3, 4, 5, 6, 7, 8, 9, beep, beep, 12, 13, beep, beep, beep, beep, beep, beep, 20, 21, 22, 23]
+
+### Behavior: Program will replace all numbers in range containing a 2, but not a 3, with "boop"
+#### Sample Input: 23
+#### Expected Output: [0, beep, boop, 3, 4, 5, 6, 7, 8, 9, beep, beep, boop, 13, beep, beep, beep, beep, beep, beep, boop, boop, 23]
+
+### Behavior: Program will replace all numbers in range containing a 3 with "won't you be my neighbor?"
+#### Sample Input: 23
+#### Expected Output: [0, beep, boop, won't you be my neighbor?, 4, 5, 6, 7, 8, 9, beep, beep, boop, won't you be my neighbor?, beep, beep, beep, beep, beep, beep, boop, boop, won't you be my neighbor?] 
+
 
 ## Legal
 
