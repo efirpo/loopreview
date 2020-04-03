@@ -18,7 +18,10 @@ function robotoGenerator(number) {
 
     
     for (i = 0; i <= number; i++) {
-      if ( numberLine[i].includes("2") ) {
+      if ( numberLine[i].includes("3") ) {
+        results.push("won't you be my neighbor?")
+      }
+      else if ( numberLine[i].includes("2") ) {
         results.push("boop")
       }
       else if ( numberLine[i].includes("1") ) {
