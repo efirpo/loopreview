@@ -26,6 +26,8 @@ function robotoGenerator(number) {
     else { computed.push(i.toString() + ", ") 
     }
   } 
+
+  // takes final computation of text and turns it into binary -- ran out of time to implement it into html.
   
   var binInput = computed.join("").split("");
   var binComplete = [];
@@ -38,15 +40,17 @@ function robotoGenerator(number) {
      binComplete += element;
     }
    });
+
   var binWork = binComplete.split("")
   var binaryFinal = "";
-  console.log(binWork)
+  
   for (var i = 0; i < binWork.length; i++) {
       binaryFinal += binWork[i].charCodeAt(0).toString(2) + " ";
   };
- 
+  
 
   return computed.join("");
+  
   
   }
   
