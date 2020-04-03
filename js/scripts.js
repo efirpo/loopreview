@@ -18,11 +18,14 @@ function robotoGenerator(number) {
 
     
     for (i = 0; i <= number; i++) {
-     if ( numberLine[i].includes("1") ) {
+      if ( numberLine[i].includes("2") ) {
+        results.push("boop")
+      }
+      else if ( numberLine[i].includes("1") ) {
        results.push("beep") 
-     }
+      }
       else { results.push(i.toString()) 
-     }
+      }
     }
      console.log(results); 
  }
