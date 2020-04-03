@@ -27,13 +27,27 @@ function robotoGenerator(number) {
     }
   } 
   
-  
-  for (var i = 0; i < input.length; i++) {
-      binary += computed[i].charCodeAt(0).toString(2) + " ";
-  }
-  console.log(binary);
+  var binaryInput = computed.join("");
+  var binInput2 = binaryInput.split("");
+  var binComplete = [];
+  console.log(binaryInput);
+  console.log(binInput2);
 
-    return computed.join("");
+  // for (i=0; i >= binInput2.length; i++) {
+   binInput2.forEach(element => {
+    if (element == "?" || element == "," || element == "'" || element == " " || element == "\'") {
+      binInput2.splice(element);
+    }
+  else {
+    binComplete += binInput2[i];
+  }
+   });
+  //console.log(binInput2);
+  console.log(binComplete);
+  return computed.join("");
+ 
+  }
+  
 
     }
     
