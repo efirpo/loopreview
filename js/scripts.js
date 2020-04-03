@@ -1,8 +1,17 @@
 // Business Logic
 
 function robotoGenerator(number) {
-  var computeNumbers = "";
-  
+  var numberLine = [];
+  var results = [];
+
+  // creates a array of strings from 0 -> user's inputted number.
+
+  for (i = 0; i <= number; i++) {
+
+    numberLine.push(i.toString());
+    
+  }
+
  }
 
 
