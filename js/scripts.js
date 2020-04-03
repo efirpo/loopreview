@@ -1,5 +1,7 @@
 // Business Logic
 
+// function takes user's input and generates a list where numbers containg "1," "2," and "3," will be replaced with determined expected outputs of "beep," "boop," and "won't you be my neighbor?"
+
 function robotoGenerator(number) {
   var numberLine = [];
   var results = [];
@@ -11,7 +13,18 @@ function robotoGenerator(number) {
     numberLine.push(i.toString());
     
   }
+  console.log(numberLine);
+    // examines strings in numberLine and adds "beep," "boop," and "won't you be my neighbor?" + remaining numbers to results array, based on string values.
 
+    
+    for (i = 0; i <= number; i++) {
+     if ( numberLine[i].includes("1") ) {
+       results.push("beep") 
+     }
+      else { results.push(i.toString()) 
+     }
+    }
+     console.log(results); 
  }
 
 
