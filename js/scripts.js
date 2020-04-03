@@ -38,7 +38,7 @@ function robotoGenerator(number) {
       var number = $("input#userNumber").val();
       var output = robotoGenerator(number);
       $("#computed").show();
-      $("#nonsense").text(output);
+      $("#nonsense").fadeIn("slow").text(output);
       $("#enter-page").hide();
       console.log(number);
     });
