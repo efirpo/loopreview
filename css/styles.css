@@ -19,7 +19,7 @@
 }
 
 .centered {
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 50%;
   transform: translate(-50%);

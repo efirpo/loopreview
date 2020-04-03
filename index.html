@@ -11,29 +11,32 @@
 </head>
 <body>
   <div class="container centered">
-    <img src="img/mrrobojers.PNG" title="You should watch the show Mr. Robot">
-    <br><br>
-    <h2>And his Magic Robotic Nonsense Generator</h2><br><br>
-    <div class="row">
+    <div id="enter-page">
+      <img src="img/mrrobojers.jpg" title="You should watch the show Mr. Robot" alt="mr robojers">
+      <img src="img/robojerslabel.jpg" alt="robojers name">
+      <br><br>
+      <h2>And his Magic Robotic Nonsense Generator</h2><br><br>
+      <div class="row">
+        
+        <form id="numberForm" class="form-inline">
+          <div class="form-group">
+            <label for="userName">What is your name?</label> &nbsp;
+            <input id="userName" type="text"> &nbsp; &nbsp; &nbsp;
+            <label for="userNumber">Enter a number</label> &nbsp;
+            <input id="userNumber" type="number">
+          </div> &nbsp; &nbsp; &nbsp;
+          <button type="submit" id="submitButton" class="btn btn-outline-success">Compute</button>
+        </form>
       
-      <form id="numberForm" class="form-inline">
-        <div class="form-group">
-          <label for="userName">What is your name?</label> &nbsp;
-          <input id="userName" type="text"> &nbsp; &nbsp; &nbsp;
-          <label for="userNumber">Enter a number</label> &nbsp;
-          <input id="userNumber" type="number">
-        </div> &nbsp; &nbsp; &nbsp;
-        <button type="submit" id="submitButton" class="btn btn-outline-success">Compute</button>
-      </form>
-    
-    </div>
-    
-    <div class="row">
-      <div id="computed">
-
-
       </div>
     </div>
+    
+    <div id="computed">
+      <img src="img/mrrobojers.jpg" title="No, really, go watch Mr. Robot" alt="mr robojers result">
+      <img src="img/robojerssays.jpg" title="No, really, go watch Mr. Robot" alt="robojers says">
+      <p id="result"></p>
+    </div>
+    
   </div>
 </body>
 </html>
