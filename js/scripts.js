@@ -5,6 +5,7 @@
 function robotoGenerator(number) {
   var numberLine = [];
   var computed = [];
+  var binary = [];
   // creates a array of strings from "0" --> user's inputted number.
 
   for (i = 0; i <= number; i++) {
@@ -24,10 +25,19 @@ function robotoGenerator(number) {
     }
     else { computed.push(i.toString() + ", ") 
     }
+  } 
+  
+  
+  for (var i = 0; i < input.length; i++) {
+      binary += computed[i].charCodeAt(0).toString(2) + " ";
   }
+  console.log(binary);
+
     return computed.join("");
-    console.log(computed); 
- }
+
+    }
+    
+ 
 
 
  // UI Logic
@@ -40,6 +50,5 @@ function robotoGenerator(number) {
       $("#computed").show();
       $("#nonsense").fadeIn("slow").text(output);
       $("#enter-page").hide();
-      console.log(number);
     });
  });
