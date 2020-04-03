@@ -5,7 +5,7 @@
 function robotoGenerator(number) {
   var numberLine = [];
   var computed = [];
-  var binary = [];
+
   // creates a array of strings from "0" --> user's inputted number.
 
   for (i = 0; i <= number; i++) {
@@ -27,29 +27,31 @@ function robotoGenerator(number) {
     }
   } 
   
-  var binaryInput = computed.join("");
-  var binInput2 = binaryInput.split("");
+  var binInput = computed.join("").split("");
   var binComplete = [];
-  console.log(binaryInput);
-  console.log(binInput2);
-
-  // for (i=0; i >= binInput2.length; i++) {
-   binInput2.forEach(element => {
+  
+   binInput.forEach(element => {
     if (element == "?" || element == "," || element == "'" || element == " " || element == "\'") {
-      binInput2.splice(element);
+      binInput.splice(element, 0);
     }
-  else {
-    binComplete += binInput2[i];
-  }
+    else {
+     binComplete += element;
+    }
    });
-  //console.log(binInput2);
-  console.log(binComplete);
-  return computed.join("");
+  var binWork = binComplete.split("")
+  var binaryFinal = "";
+  console.log(binWork)
+  for (var i = 0; i < binWork.length; i++) {
+      binaryFinal += binWork[i].charCodeAt(0).toString(2) + " ";
+  };
  
+
+  return computed.join("");
+  
   }
   
 
-    }
+    
     
  
 
