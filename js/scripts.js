@@ -29,26 +29,24 @@ function robotoGenerator(number) {
   
   // computes outputted text of robotoGenerator function into binary. ran out of time to implement into html.
 
-  // var binInput2 = computed.join("").split("");
+  // var binInput = computed.join("").split("");
   // var binComplete = [];
-  // binWork = binComplete.split("")
-  //   binInput2.forEach(element => {
-  //   if (element == "?" || element == "," || element == "'" || element == " " || element == "\'") {
-  //     binInput2.splice(element, 0);
-  //   }
-  // else {
-  //   binComplete += element;
-  // }
-  //  });
-  // console.log(binInput2);
-  // console.log(binComplete);
   
-  // binaryFinal = "";
+  //  binInput.forEach(element => {
+  //   if (element == "?" || element == "," || element == "'" || element == " " || element == "\'") {
+  //     binInput.splice(element, 0);
+  //   }
+  //   else {
+  //    binComplete += element;
+  //   }
+  //  });
+  // var binWork = binComplete.split("")
+  // var binaryFinal = "";
   // console.log(binWork)
   // for (var i = 0; i < binWork.length; i++) {
   //     binaryFinal += binWork[i].charCodeAt(0).toString(2) + " ";
   // };
-  // console.log(binaryFinal);
+ 
 
     return computed.join("");
     
