@@ -2,20 +2,22 @@
 ## by Ethan Firpo, 3/3/20
 
 ## Description
-This website takes a user inputted number and auto-generates a response message by analyzing all numbers between 0 and the inputted number.
+This website takes a user inputted number and auto-generates a response message by analyzing all numbers between 0 and the inputted number. A code-review to test my ability to use JavaScript loops. Designed and built in one work day, after one week of training in the required skills.
 
 ## Setup
 Clone this repository.
 
 Open index.html in the web browser of your choice.
 
+### OR visit https://efirpo.github.com/loopreview/
+
 ## Technology
 
-HTML
-CSS
-Bootstrap Style Library
-JavaScript
-jQuery Script Library
+#### HTML
+#### CSS
+#### Bootstrap Style Library
+#### JavaScript
+#### jQuery Script Library
 
 ## Specs
 
